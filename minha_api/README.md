@@ -16,6 +16,7 @@ source env/bin/activate
 Estes comandos instalam as dependências/bibliotecas, descritas no arquivo requirements.txt.
 
 (env)$ pip install --upgrade pip
+
 (env)$ pip install -r requirements.txt
 
 Para executar a API basta executar:
