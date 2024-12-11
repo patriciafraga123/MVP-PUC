@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
 from typing import Optional, List
 from model.filme import Filme
 
