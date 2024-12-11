@@ -1,0 +1,230 @@
+body,
+h1,
+h2,
+input,
+button,
+select,
+table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header */
+.header-container {
+    background: linear-gradient(90deg, #00509e, #c8cdc2);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Form Section */
+.form-container {
+    background-color: #ffffff;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+    color: #00509e;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #aba0a0;
+    transform: scale(1.05);
+    color: #f44336;
+}
+
+button:focus {
+    outline: 2px solid #00509e;
+    outline-offset: 2px;
+}
+
+/* Table */
+.table-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #00000026;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+table {
+    width: 100%;
+    min-width: 800px;
+    justify-content: center;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+}
+
+thead {
+    background-color: #00509e;
+    justify-content: center;
+    color: white;
+    border-bottom: 2px solid #004080;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid #fdfafa;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ed152e;
+}
+
+tbody tr:hover {
+    background-color: #de0a1c;
+}
+
+/* Estilos específicos para a tabela #myTable */
+#myTable {
+    table-layout: auto;
+    width: 100%;
+}
+
+#myTable th,
+#myTable td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#myTable th:nth-child(1),
+
+#myTable td:nth-child(1) {
+    width: 32%;
+
+
+    #myTable th:nth-child(2),
+
+    #myTable td:nth-child(2) {
+        width: 10%;
+
+    }
+
+    #myTable th:nth-child(3),
+
+    #myTable td:nth-child(3) {
+        width: 10%;
+    }
+
+    #myTable th:nth-child(4),
+
+    #myTable td:nth-child(4) {
+        width: 10%;
+    }
+
+    #myTable th:nth-child(5),
+
+    #myTable td:nth-child(5) {
+        width: 10%;
+    }
+
+    /* Estilos específicos para a tabela #myTable2 */
+    #myTable2 {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    #myTable2 th,
+    #myTable2 td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: auto;
+    }
+
+    #myTable2 input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Estilos específicos para a tabela #myTable2 */
+    #myTable2 {
+        table-layout: auto;
+        width: 100%;
+    }
+
+    #myTable2 th,
+    #myTable2 td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Ajuste de larguras específicas */
+    #myTable2 th:nth-child(1),
+    #myTable2 td:nth-child(1) {
+        width: 50%;
+    }
+
+    #myTable2 th:nth-child(2),
+    #myTable2 td:nth-child(2) {
+        width: 20%;
+    }
+
+    #myTable2 th:nth-child(3),
+    #myTable2 td:nth-child(3) {
+        width: 5%;
+    }
+
+    #myTable2 th:nth-child(4),
+    #myTable2 td:nth-child(4) {
+        width: 5%;
+    }
+
+    #myTable2 th:nth-child(5),
+    #myTable2 td:nth-child(5) {
+        width: 5%;
+    }
+
+    #myTable2 th:nth-child(6),
+    #myTable2 td:nth-child(6) {
+        width: 10%;
+    }
+
+    #myTable2 th:nth-child(7),
+    #myTable2 td:nth-child(7) {
+        width: 5%;
+    }
