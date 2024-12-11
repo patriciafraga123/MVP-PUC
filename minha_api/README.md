@@ -14,6 +14,7 @@ source env/bin/activate
   É fortemente indicado o uso de ambientes virtuais do tipo virtualenv.
 
 Estes comandos instalam as dependências/bibliotecas, descritas no arquivo requirements.txt.
+
 (env)$ pip install --upgrade pip
 (env)$ pip install -r requirements.txt
 
