@@ -12,9 +12,10 @@ python3 -m venv env
 source env/bin/activate
 
   É fortemente indicado o uso de ambientes virtuais do tipo virtualenv.
-(env)$ pip install -r requirements.txt
 
-Este comando instala as dependências/bibliotecas, descritas no arquivo requirements.txt.
+Estes comandos instalam as dependências/bibliotecas, descritas no arquivo requirements.txt.
+(env)$ pip install --upgrade pip
+(env)$ pip install -r requirements.txt
 
 Para executar a API basta executar:
 
