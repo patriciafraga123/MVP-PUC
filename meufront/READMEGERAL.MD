@@ -8,7 +8,7 @@ Data: Abril/2025
 
 O projeto My Movies é uma aplicação  composta por múltiplas APIs e uma interface web que permite ao usuário cadastrar, consultar, atualizar e remover informações sobre filmes. A aplicação também se conecta à API externa pública TMDB para consultar notas e listas de filmes populares.
 
-## Fluxograma
+## Diagrama da Arquitetura
 
 Aqui está um fluxograma que ilustra o funcionamento do projeto:
 
@@ -34,7 +34,6 @@ Aqui está um fluxograma que ilustra o funcionamento do projeto:
 | `tmdb_api`       | API intermediária que se comunica com a API externa do TMDB               |
 | `meufront`       | Interface do usuário (HTML/CSS/JavaScript)                                |
 
-# Diagrama da Arquitetura
 
 ## Descrição dos Componentes de Back-End
 
@@ -80,7 +79,6 @@ Função :Controla a página de 'Filmes Populares' (`index2.html`). Faz chamadas
 
 d) Rotas
 A interface web (`meufront`) consome diretamente rotas HTTP utilizando JavaScript puro com `fetch`, garantindo a integração completa com os componentes back-end da aplicação.
-
 
 
 # API Externa Utilizada
