@@ -30,6 +30,8 @@ Pasta `minha_api/`:
 - `requirements.txt` — Lista de dependências Python do projeto
 - `README.md` — Instruções específicas deste componente
 
+##Integração com o Front-end
+Esta API é consumida pelo arquivo index.html via script script.js. Faz parte da interface voltada ao gerenciamento de filmes pessoas
 
 ## Banco de Dados
 
