@@ -1,6 +1,6 @@
 # My Movies – Gerenciador de Filmes
 
-Projeto da Pós-Graduação em Engenharia de Software – PUC-Rio**
+Projeto da Pós-Graduação em Engenharia de Software – PUC-Rio
 Aluna :  Patricia Fraga  
 Data: Abril/2025  
 
