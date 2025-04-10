@@ -18,6 +18,19 @@ API secundária do projeto **My Movies**, responsável pelo gerenciamento da lis
 - `DELETE /filme?nome_filme=...`: Remove o filme informado da base de dados
 
 ## Estrutura do Projeto
+
+Pasta `minha_api/`:
+
+- `app.py` — Código principal da API Flask
+- `logger.py` — Sistema de logging centralizado
+- `__init__.py` — Arquivo que transforma este diretório em um pacote Python
+- `model/` — Definição do banco via SQLAlchemy
+- `schemas/` — Schemas de validação
+- `Dockerfile` — Criação do container da API
+- `requirements.txt` — Lista de dependências Python do projeto
+- `README.md` — Instruções específicas deste componente
+
+
 Pasta `minha_api/`: 
 ─ `app.py/` - Código principal da API Flask 
 ─ `logger.py/` - Sistema de logging centralizado 
