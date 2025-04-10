@@ -23,12 +23,13 @@ Componente intermediário do projeto My Movies, responsável por integrar a apli
 
 ## Estrutura do Projeto
 
-tmdb_api/  
-─ tmdb.py # Código principal da API Flask de integração externa  
-─ Dockerfile # Criação do container Docker da API 
-- __init__.py # Arquivo que transforma este diretório em um pacote Python 
-─ requirements.txt # Lista de dependências Python  
-─ README.md # Este arquivo  
+Pasta `tmdb_api/`:
+
+- `tmdb.py` — Código principal da API Flask de integração externa
+- `Dockerfile` — Criação do container Docker da API
+- `__init__.py` — Arquivo que transforma este diretório em um pacote Python
+- `requirements.txt` — Lista de dependências Python
+- `README.md` — Este arquivo 
 
 ## Integração com o Sistema
 
