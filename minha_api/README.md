@@ -19,15 +19,27 @@ API secundária do projeto **My Movies**, responsável pelo gerenciamento da lis
 
 ## Estrutura do Projeto
 minha_api/ 
-─ app.py # Código principal da API Flask 
-─ logger.py # Sistema de logging centralizado 
-─ __init__.py # Arquivo que transforma este diretório em um pacote Python 
+─ app.py/ # Código principal da API Flask 
+─ logger.py/ # Sistema de logging centralizado 
+─ __init__.py/ # Arquivo que transforma este diretório em um pacote Python 
 ─ model/ # Definição do banco via SQLAlchemy 
 ─ schemas/ # Schemas de validação  
 ─ Dockerfile # Criação do container da API 
 ─ docker-compose.yml # # Orquestrador de todos os componentes da aplicação (minha_api, filmespop_api, tmdb_api, meufront)
 ─ requirements.txt       # Lista de dependências Python do projeto
 ─ README.md # Instruções específicas deste Componente 
+
+Pasta `meufront/`:
+
+- `images/` — Imagens usadas no front
+- `index.html` — Página principal (My Area)
+- `index2.html` — Página de filmes populares (Most Popular Movies)
+- `script.js` — JS da index.html (minha lista)
+- `scripts2.js` — JS da index2.html (filmes populares)
+- `style.css` — Estilo das páginas (usado em ambas as páginas)
+- `README.md` — Instruções específicas deste componente
+- `READMEGERAL.md` — Instruções gerais da aplicação
+
 
 
 ## Banco de Dados
