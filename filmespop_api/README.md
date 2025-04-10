@@ -33,12 +33,12 @@ Pasta `filmespop_api/`:
 - `requirements.txt` — Lista de dependências Python
 - `README.md` — Este arquivo
 
-# Integração com o Front-end
+## Integração com o Front-end
 
 Esta API é consumida pelo arquivo index2.html via script script2.js. Faz parte da interface voltada à visualização e marcação de filmes populares.
 
 
-## 🗃️ Banco de Dados
+## Banco de Dados
 
 - A API utiliza um banco PostgreSQL, gerenciado via Docker Compose.
 - O nome do banco de dados é `meubanco_filmespop_api`.
