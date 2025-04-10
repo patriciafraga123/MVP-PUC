@@ -12,7 +12,7 @@ O projeto My Movies é uma aplicação  composta por múltiplas APIs e uma inter
 
 Aqui está um fluxograma que ilustra o funcionamento do projeto:
 
-![Fluxograma](meufront/fluxograma.png)
+![Fluxograma](/fluxograma.png)
 
 ## Tecnologias Utilizadas
 
