@@ -23,14 +23,15 @@ API secundária do projeto My Movies, responsável por armazenar e gerenciar os 
 
 ## Estrutura do Projeto
 
-filmespop_api/ 
-─ pop.py # Código principal da API de filmes populares
-─ model/ # Definição do modelo de dados com SQLAlchemy 
-─ schemas/ # Schemas de validação Pydantic 
-─ Dockerfile # Criação do container Docker da API 
--  __init__.py # Arquivo que transforma este diretório em um pacote Python 
-─ requirements.txt # Lista de dependências Python 
-─ README.md # Este arquivo 
+Pasta `filmespop_api/`:
+
+- `pop.py` — Código principal da API de filmes populares
+- `model/` — Definição do modelo de dados com SQLAlchemy
+- `schemas/` — Schemas de validação Pydantic
+- `Dockerfile` — Criação do container Docker da API
+- `__init__.py` — Arquivo que transforma este diretório em um pacote Python
+- `requirements.txt` — Lista de dependências Python
+- `README.md` — Este arquivo
 
 # Integração com o Front-end
 
