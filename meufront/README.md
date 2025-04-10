@@ -67,7 +67,16 @@ style.css              # Estilo das páginas index2.html
 README.md              # Instruções específicas deste componente
 READMEGERAL.md         # Instruções gerais da aplicação
 
-meufront/ ├── images/ # Imagens usadas no front ├── index.html # Página principal (My Area) ├── index2.html # Página de filmes populares (Most Popular Movies) ├── script.js # JS da index.html (minha lista) ├── scripts2.js # JS da index2.html (filmes populares) ├── style.css # Estilo das páginas (usado em ambas as páginas) ├── README.md # Instruções específicas deste componente └── READMEGERAL.md # Instruções gerais da aplicação
+meufront/
+├── images/              # Imagens usadas no front
+├── index.html           # Página principal (My Area)
+├── index2.html          # Página de filmes populares (Most Popular Movies)
+├── script.js            # JS da index.html (minha lista)
+├── scripts2.js          # JS da index2.html (filmes populares)
+├── style.css            # Estilo das páginas (usado em ambas as páginas)
+├── README.md            # Instruções específicas deste componente
+└── READMEGERAL.md       # Instruções gerais da aplicação
+
 
 
 ## Integração com o Backend
