@@ -6,20 +6,20 @@ Este componente fornece a interface do usuário para o projeto My Movies. Constr
 
 A aplicação web possui duas páginas principais:
 
-### 📄 `index.html` – Minha Lista Pessoal
+###  `index.html` – Minha Lista Pessoal
 Permite:
 - Adicionar um novo filme à lista pessoal
 - Visualizar todos os filmes cadastrados
 - Atualizar um filme com nota pessoal após assistido
 - Remover filmes da lista
 
-### 📄 `index2.html` – Filmes Populares
+### `index2.html` – Filmes Populares
 Permite:
 - Buscar filmes populares da API externa TMDB
 - Salvar filmes populares no banco local
 - Marcar filmes como "quero assistir" 👁️ ou "adorei" ❤️
 
-### 📜 JavaScript
+### JavaScript
 - `script.js`: Lida com a lógica de `index.html`, interagindo com `minha_api` e `tmdb_api`.
 - `scripts2.js`: Lida com a lógica de `index2.html`, interagindo com `filmespop_api` e `tmdb_api`.
 
@@ -29,7 +29,7 @@ A interface web (`meufront`) foi desenvolvida com JavaScript puro, utilizando `f
 
 ### Chamadas Realizadas pelo Front-End
 
-#### 📄 `index.html` – Minha Lista Pessoal
+#### `index.html` – Minha Lista Pessoal
 
 Integra com:
 - `minha_api` (filmes pessoais)
@@ -42,7 +42,7 @@ Rotas chamadas:
 - `DELETE /filme?nome_filme=...` – remover filme da lista pessoal  
 - `GET /nota?nome_filme=...` – buscar nota do filme na API TMDB  
 
-#### 📄 `index2.html` – Filmes Populares
+#### `index2.html` – Filmes Populares
 
 Integra com:
 - `filmespop_api` (filmes populares locais)
@@ -53,16 +53,6 @@ Rotas chamadas:
 - `POST /salvar-filmes` – adicionar filmes populares ao banco local  
 - `PUT /atualizar-filme` – atualizar marcações (❤️ “adorei”, 👁️ “quero assistir”)  
 - `GET /populares` – buscar filmes populares da API externa TMDB  
-
-## Rotas Chamadas pela Interface
-
-A interface web realiza chamadas a 4 rotas com métodos HTTP distintos, conforme exigido:
-
-- **GET** `/populares` (via `tmdb_api`): busca filmes populares da TMDb
-- **POST** `/salvar-filmes` (via `filmespop_api`): salva os filmes populares no banco
-- **PUT** `/atualizar-filme` (via `filmespop_api`): atualiza status "Adorei" e "Watchlist" no banco
-- **GET** `/filmespop` (via `filmespop_api`): busca filmes populares já salvos no banco
- 
 
 ## Estrutura do Projeto
 
