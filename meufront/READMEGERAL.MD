@@ -1,4 +1,4 @@
-# My Movies – Gerenciador de Filmes
+# Aplicação My Movies 
 
 Projeto da Pós-Graduação em Engenharia de Software – PUC-Rio
 Aluna :  Patricia Fraga  
