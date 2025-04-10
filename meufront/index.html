@@ -1,0 +1,94 @@
+<!--
+  Projeto: My Movies
+  Aluna: Patricia Fraga
+  Curso : Pós Graduação em Engenharia de Software - PUC RJ
+  Data : Abril/2025
+  Descrição:
+    Este arquivo HTML define a estrutura principal da página "My Area", com seções para incluir
+    filmes que desejo assistir ou que já assisti. A página contém 1 formulário e duas tabelas:
+      - "Movie to Add": permite incluir filmes na lista de assistidos com avaliação, ou apenas
+                       adicionar filmes que desejo assistir.
+      - "My Ratings": lista de filmes já assistidos e avaliados.
+      - "My Watchlist": lista de filmes que desejo assistir.
+      - Navegue entre a área pessoal ("My Area") e a lista de populares.
+
+    A lógica de integração com o backend e as APIs está descrita no script.js.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">My Movies</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">My Area</a></li>
+                    <li><a href="index2.html">Most Popular Movies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h2>My Area</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Movie to Add </h2>
+            <div class="form-grid">
+                <input type="text" id="newInput" placeholder="🎬 Movie name">
+                <select id="newAssisti">
+                    <option value="" disabled selected>Watched?</option>
+                    <option value="Sim">Yes</option>
+                    <option value="Não">No</option>
+                </select>
+                <input type="number" id="newNota" placeholder="📝 My rating" step="0.1">
+
+                <button onclick="newItem()" class="addBtn" title="Add movie">+</button>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <h2>My Ratings</h2>
+            <p> </p>
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>TMDB Rating</th>
+                        <th>My Rating</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="table-container">
+            <h2>My Watchlist</h2>
+            <p> </p>
+            <table id="myTable2">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>TMDB rating</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

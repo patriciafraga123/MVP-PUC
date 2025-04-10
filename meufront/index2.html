@@ -1,0 +1,53 @@
+<!--
+  Projeto: My Movies
+  Aluna: Patricia Fraga
+  Curso : Pós-Graduação em Engenharia de Software - PUC RJ
+  Data : Abril/2025
+  Descrição:
+    Este arquivo HTML define a estrutura da página "Most Popular Movies", que exibe uma lista dinâmica
+    dos filmes mais populares obtidos via API externa (TMDb). Os filmes são carregados automaticamente
+    ao abrir a página e são apresentados em formato de cards interativos.
+
+    A página permite que o usuário:
+      - Marque filmes como "adorei" (❤️) ou "quero assistir" (👁️), armazenando essas preferências no banco de dados.
+      - Navegue entre a área pessoal ("My Area") e a lista de populares.
+
+    A lógica de integração com o backend e com as APIs está descrita no arquivo scripts2.js.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movies</title>
+    <link rel="stylesheet" href="styles2.css">
+
+    <title>Projeto</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">My Movies</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">My Area </a></li>
+                    <li><a href="index2.html">Most Popular Movies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h2>Most Popular Movies</h2>
+        </div>
+    </header>
+
+    <section id="filmes-list">
+    </section>
+
+    <script src="scripts2.js"></script>
+</body>
+
+</html>

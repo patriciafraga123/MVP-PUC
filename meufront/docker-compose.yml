@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+
+  db_minha_api:
+    image: postgres:latest
+    container_name: db_minha_api
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: meubanco_minha_api
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data_minha_api:/var/lib/postgresql/data
+    networks:
+      - minha-rede
+
+  minha-api:
+    build: ../minha_api
+    container_name: minha-api
+    hostname: minha-api
+    environment:
+      DATABASE_URL: postgresql://postgres:password@db_minha_api:5432/meubanco_minha_api?client_encoding=utf8
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db_minha_api
+    command: [ "sh", "-c", "sleep 5 && flask run --host=0.0.0.0 --port=5000" ]
+    networks:
+      - minha-rede
+
+  db_filmespop_api:
+    image: postgres:latest
+    container_name: db_filmespop_api
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: meubanco_filmespop_api
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data_filmespop_api:/var/lib/postgresql/data
+    networks:
+      - minha-rede
+
+  filmespop-api:
+    build:
+      context: ../filmespop_api
+      dockerfile: Dockerfile
+    container_name: filmespop-api
+    hostname: filmespop-api
+    environment:
+      DATABASE_URL: postgresql://postgres:password@db_filmespop_api:5432/meubanco_filmespop_api?client_encoding=utf8
+    ports:
+      - "5002:5002"
+    depends_on:
+      - db_filmespop_api
+    command: [ "sh", "-c", "sleep 10 && flask run --host=0.0.0.0 --port=5002" ]
+    networks:
+      - minha-rede
+
+  tmdb-api:
+    build: ../tmdb_api
+    container_name: tmdb-api
+    ports:
+      - "5001:5001"
+    networks:
+      - minha-rede
+    environment:
+      TMDB_API_KEY: INSIRA A SENHA AQUI
+
+  meu-front:
+    build: .
+    container_name: meu-front
+    hostname: meu-front
+    ports:
+      - "8000:80"
+    depends_on:
+      - minha-api
+      - filmespop-api
+      - tmdb-api
+    extra_hosts:
+      - "minha-api:host-gateway"
+      - "filmespop-api:host-gateway"
+      - "tmdb-api:host-gateway"
+    networks:
+      - minha-rede
+
+networks:
+  minha-rede:
+    name: minha-rede
+    driver: bridge
+
+volumes:
+  postgres_data_minha_api:
+  postgres_data_filmespop_api:
