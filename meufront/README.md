@@ -1,4 +1,4 @@
-# meufront – Interface Web do Projeto My Movies  (COMPONENTE PRINCIPAL)
+# meufront – Interface Web do Projeto My Movies  *(COMPONENTE PRINCIPAL)*
 
 Este componente fornece a interface do usuário para o projeto My Movies. Construída com HTML, CSS e JavaScript puro, permite ao usuário interagir com as APIs do projeto de forma intuitiva e funcional.
 
